@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="stylesheet.css">
+<body>
+    <h1>Welcome to the Tapduc Database</h1>
+  
+    <br>
+  
+    <h3>Insert User into Interest Form</h3>
+    <form id="Contact" action="/adminInsert" method="POST">
+      <label for="fname">Name</label>
+      <input type="text" id="fname" name="name" placeholder="Type your name..">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="surname" placeholder="Type your last name..">
+      <label for="mail">E-mail Address</label>
+      <input type="text" id="mail" name="email" placeholder="Type your e-mail.." required>
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phoneNum" placeholder="Enter Phone Number.." required>
+      <input type="submit" value="Send">
+    </form>
+  
+    <br /><br />
+
+    <h3>Update Student</h3>
+    <form method="POST" action="/adminUpdate">
+      <input type="text" name="email" placeholder="Enter Email to Replace">
+      <button>Submit</button>
+    </form>
+
+    <br><br>
+  
+    <h3>Delete Student</h3>
+    <form method="POST" action="/adminDelete">
+      <input type="text" name="email" placeholder="Type Email Address to Delete" required>
+      <button>Delete</button>
+    </form>
+    <br /><br />
+  
+    <h3>Search in Interest Form</h3>
+    <form method="POST" action="/adminSearch">
+      <input type="text" name="surname" placeholder="Type Surname to Search by">
+      <button>Submit</button>
+    </form>
+
+    <br /><br />
+  
+    <h3>Display All Interest Form Submissions</h3>
+    <form method="POST" action="/adminDisplayInterest">
+      <button>Display Interest Form Submissions</button>
+    </form>
+
+    <h3>Display All Contact Form Submissions</h3>
+    <form method="POST" action="/adminDisplayContact">
+      <button>Display Contact Form Submissions</button>
+    </form>
+  </body>
+  

@@ -1,0 +1,25 @@
+<h1>Contact Form</h1>
+<table border="0">
+  <tr style="text-align: left; background-color: #199319">
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Phone Number</th>
+    <th>Message</th>
+  </tr>
+  <% data.forEach(function(user){ %>
+  <tr style="text-align: left; background-color: rgb(159, 159, 159)">
+    <td><%= user.firstName%></td>
+    <td><%= user.lastName%></td>
+    <td><%= user.Email%></td>
+    <td><%= user.phoneNum%></td>
+    <td><%= user.Message%></td>
+    <% }) %>
+  </tr>
+</table>
+
+<br /><br />
+
+<form action="/admin">
+  <button>Return to Admin Homepage</button>
+</form>
